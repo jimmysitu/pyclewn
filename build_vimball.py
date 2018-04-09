@@ -68,7 +68,7 @@ def vimball():
 
     # Create version.vim.
     version = __version__ + '.' + subprocess.check_output(
-                    ['hg',  'id',  '-i'], universal_newlines=True)
+                    ['git',  'rev-parse',  'HEAD'], universal_newlines=True)
     with open('runtime/autoload/pyclewn/version.vim', 'w') as f:
         f.write(VERSION_FUNC % version.rstrip('+\n'))
 

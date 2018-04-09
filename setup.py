@@ -83,7 +83,7 @@ class sdist(_sdist):
 
         # Create the runtime_version.py module.
         version = __version__ + '.' + subprocess.check_output(
-                    ['hg',  'id',  '-i'], universal_newlines=True)
+                    ['git',  'rev-parse',  'HEAD'], universal_newlines=True)
         with open('lib/clewn/runtime_version.py', 'w') as f:
             f.write('version = "%s"' % version.rstrip('+\n'))
 
