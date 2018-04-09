@@ -1,0 +1,15 @@
+*.pyc
+*.swp
+testsuite/foobar
+testsuite/overloaded
+testsuite/function_template
+testsuite/function_template_sub/*.o
+logfile
+.coverage
+lib/clewn/runtime_version.py
+runtime/autoload/pyclewn/version.vim
+
+sphinx/_build/.*
+lib/pyclewn.egg-info/.*
+lib/clewn/runtime/pyclewn-.*.vmb
+
